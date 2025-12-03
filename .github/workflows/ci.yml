@@ -36,6 +36,4 @@ jobs:
           go-version: "1.25.1"
 
       - name: Run GoFmt
-        run: |
-          test -z $(go fmt ./...)
-          echo $?
+        run: test -z $(go fmt ./...)
